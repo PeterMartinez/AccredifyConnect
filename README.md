@@ -1,0 +1,4 @@
+AccredifyPHP
+============
+
+Accredify PHP SDK
