@@ -43,8 +43,8 @@ class API{
 	public static function getClient($accessToken = null){
 		if($accessToken == null){return null;}
 		self::$oAuth2->setAccessToken($accessToken);
-    		$response = self::$oAuth2->fetch(self::$base_url.'api/v1/me.json');
-    		return (isset($response['result']['legal_name']))?$response['result']:null;
+    		$response = self::$oAuth2->fetch(self::$base_url.'api/me.json');
+    		return (isset($response['result']['data']['person']))?$response['result']:null;
 
 	}
 
