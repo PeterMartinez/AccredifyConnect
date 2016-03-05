@@ -9,7 +9,7 @@
 ## Getting Started
 
 **Step 1, Install Accredify Connect Library**
-``` composer require petermartinez/accredify-php```
+``` composer require petermartinez/accredify-connect-php```
 
 **Step 2, Set Environment Variables**  Add the following environment variables to your .env file. 
 ```
