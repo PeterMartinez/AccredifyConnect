@@ -1,6 +1,17 @@
 {
+    "name": "petermartinez/AccredifyPHP",
+    "description": "Accredify Connect PHP Library",
+    "authors": [
+        {
+            "name": "Peter Martinez",
+            "email": "Peter@Accredify.com"
+        }
+    ],  
     "require": {
         "guzzlehttp/guzzle": "^6.1",
         "adoy/oauth2": "^1.3"
+    },
+    "autoload": {
+        "psr-0": { "Accredify\\": ["src/"] }
     }
 }
