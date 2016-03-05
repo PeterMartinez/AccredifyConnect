@@ -3,7 +3,7 @@ namespace Accredify;
 use \GuzzleHttp\Client as GC;//HTTP CURL LIB
 use \OAuth2\Client as Client;//Simple oAuth2 Client
 
-class API{
+class Connect{
 	private static $oAuth2 = null;
 	private  static $base_url;	
 
