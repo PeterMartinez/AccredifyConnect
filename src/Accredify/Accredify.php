@@ -8,8 +8,8 @@ class API{
 	private  static $base_url;	
 
 	public function __construct(){		
-		self::$base_url = ($_ENV['APP_ENV'] == 'sandbox')? "https://api.sandbox.accredify.com/" : "https://api.accredify.com/";
-		self::$oAuth2 = new Client($_ENV['APP_ID'], $_ENV['APP_SECRET']);
+		self::$base_url = ($_ENV['ACCREDIFY_APP_ENV'] == 'sandbox')? "https://api.sandbox.accredify.com/" : "https://api.accredify.com/";
+		self::$oAuth2 = new Client($_ENV['ACCREDIFY_APP_ID'], $_ENV['ACCREDIFY_APP_SECRET']);
 	}
 
 	//Send Request to Accredify
@@ -25,7 +25,7 @@ class API{
 		$code = ($code !=  null)? $code : $_GET['code'];
 		$response = self::$oAuth2->getAccessToken(
 					self::$base_url.'oauth/token', 'authorization_code',  
-					array('code' => $code, 'redirect_uri' =>$_ENV['REDIRECT_URI'])
+					array('code' => $code, 'redirect_uri' =>$_ENV['ACCREDIFY_REDIRECT_URI'])
 				);	 	
 		return $response['result'];
   	} 
@@ -43,7 +43,7 @@ class API{
 
 	//Get Accredify Connect Link
 	public static function getConnectLink($state=null){
-		$link = self::$base_url.'oauth/authorize?client_id='.$_ENV['APP_ID'].'&redirect_uri='.$_ENV['REDIRECT_URI'].'&response_type=code';
+		$link = self::$base_url.'oauth/authorize?client_id='.$_ENV['ACCREDIFY_APP_ID'].'&redirect_uri='.$_ENV['ACCREDIFY_REDIRECT_URI'].'&response_type=code';
 		return $link;		
 	}		
 }
