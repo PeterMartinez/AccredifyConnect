@@ -43,7 +43,7 @@ class Connect{
 
 	//Get Accredify Connect Link
 	public static function getConnectLink($state=null){
-		$link = self::$base_url.'oauth/authorize?client_id='.$_ENV['ACCREDIFY_APP_ID'].'&redirect_uri='.$_ENV['ACCREDIFY_REDIRECT_URI'].'&response_type=code';
+		$link = self::$base_url.'oauth/authorize?client_id='.$_ENV['ACCREDIFY_APP_ID'].'&redirect_uri='.$_ENV['ACCREDIFY_REDIRECT_URI'].'&response_type=code&state='.$state;
 		return $link;		
 	}		
 }
