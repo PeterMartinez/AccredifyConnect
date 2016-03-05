@@ -12,10 +12,12 @@
 ``` composer require petermartinez/accredify-php```
 
 **Step 2, Set Environment Variables**  Add the following environment variables to your .env file. 
-```ACCREDIFY_APP_ENV=sandbox
+```
+ACCREDIFY_APP_ENV=sandbox
 ACCREDIFY_APP_ID=
 ACCREDIFY_APP_SECRET=
-ACCREDIFY_REDIRECT_URI=```. 
+ACCREDIFY_REDIRECT_URI=
+```
 
 - Get Keys/Register App
     - [Sandbox Developer Portal](https://developer.sandbox.accredify.com)
