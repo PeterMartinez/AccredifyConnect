@@ -25,8 +25,8 @@ ACCREDIFY_REDIRECT_URI=
 
 - Configure **.env** 
     - Enviroment
-        - Testing Sandbox: ```APP_ENV=sandbox```
-        - Testing Production ```APP_ENV=production```
+        - Testing Sandbox: ```ACCREDIFY_APP_ENV=sandbox```
+        - Testing Production ```ACCREDIFY_APP_ENV=production```
     - Public Key ```ACCREDIFY_APP_ID=<YOUR_PUBLIC_KEY>```
     - Private Key ```ACCREDIFY_APP_SECRET=<YOUR_PUBLIC_KEY>```
     - Redirect URI ```ACCREDIFY_REDIRECT_URI=<YOUR_REDIRECT_URI>```
