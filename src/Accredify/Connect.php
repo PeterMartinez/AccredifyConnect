@@ -38,7 +38,7 @@ class Connect{
 				'name'     => 'access_token',
 				'contents' => $access_token
 				];		
-		return API::send($multipart,$url);	
+		return Connect::send($multipart,$url);	
 	}
 
 	//Get Accredify Connect Link
