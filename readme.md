@@ -70,7 +70,7 @@ use Accredify\Connect as AccredifyConnect;
                                 (
                                     [city] => Miami
                                     [state] => FL
-                                    [zip] => 33165
+                                    [zip] => 33133
                                 )
 
                         )
@@ -92,7 +92,7 @@ use Accredify\Connect as AccredifyConnect;
                                             [type] => Attorney
                                             [name] => Adrian Alverez
                                             [license] => 123
-                                            [address] => 11101 SW 46 ST  Miami FL 33165
+                                            [address] => Address
                                             [doc] => https://s3.amazonaws.com/accredify-sandbox-secure/1_qA0wMcD9i.png?X-Amz-Content-Sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJOZ6LDMBE2M377KQ%2F20160305%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160305T164512Z&X-Amz-SignedHeaders=Host&X-Amz-Expires=5400&X-Amz-Signature=37c480887fd52fa901850a2e1e1b60b24a326fbac3241ae1a1ea7ffa22b4ecf3
                                             [doc_date] => 09 / 23 / 2015
                                         )
